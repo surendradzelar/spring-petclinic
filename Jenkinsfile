@@ -1,8 +1,8 @@
-node('MAVEN') {
+node('maven') {
     // some block
     stage('scm') {
     // some block
-    git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic.git'
+    git branch: 'main', url: 'https://github.com/surendradzelar/spring-petclinic.git'
 }
 stage('build') {
     // some block
