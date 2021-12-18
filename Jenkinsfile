@@ -12,6 +12,6 @@ stage('build') {
 }
 stage('reports') {
     // some block
-    archiveArtifacts artifacts: 'target/surefire-reports/.jar', followSymlinks: false
+    archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
 }
 }
