@@ -7,7 +7,7 @@ node('maven') {
 stage('build') {
     // some block
     sh ''' sudo apt-get install maven -y
-           mvn complie
+           mvn compile
            mvn package '''
 }
 stage('reports') {
