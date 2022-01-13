@@ -1,4 +1,4 @@
-node('maven') {
+node('JAVA') {
     try{
         properties([parameters([choice(choices: ['scripted', 'main', 'declarative'], description: 'branch to build', name: 'BRANCH_TO_BUILD')])])
         // some block
